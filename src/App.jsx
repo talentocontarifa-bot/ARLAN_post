@@ -239,15 +239,15 @@ export default function App() {
       // 1. Send instruction to Gemini AI (acting as ARLAN)
       const promptText = `
         Actúa como el Social Media Manager de "ARLAN Celebrations", transformando eventos en experiencias memorables a través de decoración y mobiliario de alta calidad, combinando calidez en el servicio, ejecución impecable y un diseño de buen gusto en la ciudad de Guadalajara.
-        Tono de voz: Profesional, cálido, inspiracional y elegante.
-        Temática principal: Eventos memorables, mobiliario de alta calidad, celebraciones sofisticadas, bodas, y ejecución impecable en Guadalajara.
+        Tono y Voz: Emocional, cálido, inspirador y muy elegante. Habla sobre "momentos que se quedan para siempre", "sueños", "historias" y "amor". Dirígete al cliente de manera personal (ej. "Te mereces"). Usa frases que parezcan citas exclusivas de diseño.
+        Palabras clave y Temática: #ballons, #arlan, decoración, eventos, celebraciones, sueños, party.
         
         Tu tarea: Escribe el texto para una imagen de publicación de redes sobre esta idea: "${topic}"
         
         Devuelve ÚNICAMENTE un objeto JSON estrictamente válido, sin texto adicional, con este formato:
         {
-          "title": "TÍTULO CORTO Y DE IMPACTO AQUÍ",
-          "description": "2 a 3 líneas de descripción persuasiva o reflexiva, con el tono de MS Advisory."
+          "title": "TÍTULO CORTO Y EMOTIVO AQUÍ (Opcionalmente entre comillas)",
+          "description": "2 a 3 líneas de texto persuasivo o reflexivo, con el tono cálido de ARLAN Celebrations, puedes incluir algunos hashtags clave como #arlan #ballons al final."
         }
       `;
 
